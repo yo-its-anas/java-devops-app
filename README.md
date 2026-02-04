@@ -50,9 +50,3 @@ Then open a browser and visit:
 http://localhost:8080
 
 ---
-
-## Configuration Notes
-
- - The application expects tips.txt to be present in the current working directory
- - If the file is missing, the application will fail at runtime
- - The server port is currently hardcoded to 8080
