@@ -1,20 +1,18 @@
-# Use a lightweight JDK image
-FROM eclipse-temurin:17-jdk-jammy
+# 1 base image (OS)
+FROM openjdk:17-jdk-alpine
 
-# Set working directory inside the container
+# 2 working directory for the app
 WORKDIR /app
 
-# Copy Java source code
-COPY src/Main.java /app/Main.java
+# 3 copy the code from your HOST to your Container (working dir)
+COPY src/Main.java Main.java
+COPY tips.txt tips.txt
 
-# Copy tips file
-COPY tips.txt /app/tips.txt
-
-# Compile Java application
+# 4 Run the commands to install libs or to compile code
 RUN javac Main.java
 
-# Expose application port
+# 5 Expose the port
 EXPOSE 8080
 
-# Run the application
+# 6 Serve the app / Keep it running
 CMD ["java", "Main"]
