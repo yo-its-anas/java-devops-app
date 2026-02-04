@@ -1,0 +1,10 @@
+Learn Linux basics — you’ll live in the terminal.
+Never push .env or secrets to Git. Ever.
+Understand Git well before fancy CI/CD tools.
+Automate boring stuff early, even if it’s ugly.
+Read logs first before panicking.
+Know how the app works before trying to deploy it.
+Start with Docker before Kubernetes.
+Use versioned configs, not “final_final_v2”.
+Monitoring > guessing when something breaks.
+If it’s not documented, it doesn’t exist.
